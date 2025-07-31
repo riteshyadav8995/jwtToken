@@ -12,8 +12,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 mongoose.connect('mongodb+srv://riteshyadav8995:vEerCwwl6MjX0fZp@cluster0.jelzqfq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{
     // string option
-    useUnifiedTopology:true,
-    useNewUrlParser:true
+      ssl:false
 }).then(()=>{
     console.log("connected to db")
 })

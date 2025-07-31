@@ -12,7 +12,9 @@ const verify=(req,res,next)=>{
         }).status(500)
     }
     else{
-        console.log(decode);
+        //console.log(decode);
+        req.email=decode.email
+        next();
     }
   })
   }

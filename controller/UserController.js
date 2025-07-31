@@ -52,7 +52,7 @@ const handleUserLogin=(req,res)=>{
 }
 
 const getDetails=(req,res)=>{
-
+  
 }
 
 export default { 
